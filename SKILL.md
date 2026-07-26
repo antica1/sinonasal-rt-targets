@@ -1,7 +1,7 @@
 ---
 name: sinonasal-rt-targets
 description: 鼻腔鼻窦癌放疗靶区勾画——上颌窦/筛窦/鼻腔亚部位CTV、视路保护、诱导化疗后放疗、SNUC/嗅神经母细胞瘤特殊类型。Sinonasal carcinoma RT — maxillary/ethmoid/nasal CTV, optic pathway sparing, post-induction RT, SNUC/esthesioneuroblastoma.
-version: 1.3.1
+version: 1.3.2
 author: Zhu Guopei / Shanghai Ninth People's Hospital
 license: CC BY-NC-SA 4.0
 metadata:
@@ -141,11 +141,13 @@ N3b：任何 LN+ ENE（临床）
 
 ### cN0 的颈部争议
 
+> **ICAR 2024 数据**（6448 例 NCDB + 1283 例 Meta）：上颌窦 SCC 初诊 N+ = **20.7%**，鼻腔 SCC = **9.3%**。全程随访中 **1/3** 患者最终出现颈部转移——cN0 不等于低风险。
+
 ```
 鼻腔鼻窦癌 cN0 → 颈部预防照射？
     │
-    ├── SCC pT3-4 cN0 → ✅ 同侧 ⅠB+Ⅱ+Ⅲ（ESMO 2025）
-    ├── SCC pT1-2 cN0 → ❌ 不做
+    ├── 上颌窦 SCC cN0 → ✅ 同侧 ⅠB+Ⅱ+Ⅲ（N+ 率 20.7%，不可忽视）
+    ├── 鼻腔 SCC cN0 → ⚠️ pT3-4→✅ 同侧 ⅠB+Ⅱ+Ⅲ。pT1-2→❌ 不做（N+ 率仅 9.3%）
     ├── SNUC any T cN0 → ✅ 同侧 ⅠB+Ⅱ+Ⅲ+RP（Faisal 2020 Meta）
     ├── 腺癌/ACC cN0 → ❌ 不做（参照唾液腺 Skill）
     ├── 嗅神经母细胞瘤 cN0 → ❌ 不做（除非 Kadish C）
