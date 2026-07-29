@@ -6,7 +6,7 @@ metadata:
     related_skills: [shared-knowledge, head-neck-dvh-plan-review]
 name: sinonasal-rt-targets
 description: 鼻腔鼻窦癌放疗靶区勾画——上颌窦/筛窦/鼻腔亚部位CTV、视路保护、诱导化疗后放疗、SNUC/嗅神经母细胞瘤特殊类型。Sinonasal carcinoma RT — maxillary/ethmoid/nasal CTV, optic pathway sparing, post-induction RT, SNUC/esthesioneuroblastoma.
-version: 1.3.2
+version: 1.4.0
 author: Zhu Guopei / Shanghai Ninth People's Hospital
 license: CC BY-NC-SA 4.0
 ---
@@ -469,12 +469,41 @@ CTV___：______（___ Gy — 理由：______）
 
 #### SMARCB1(INI1) 缺失型
 
+> INI1（SMARCB1）是 SWI/SNF 染色质重塑复合体的核心亚基。INI1 缺失→EZH2 依赖性的合成致死——这是靶向治疗的理论基础。
+
 | 特征 | 内容 |
 |------|------|
-| **病理** | 基底样或横纹肌样形态，INI1 IHC 表达缺失 |
-| **临床** | 比 SMARCA4 缺失型略少见，同样高度侵袭性 |
-| **特殊** | EZH2 抑制剂（Tazemetostat）可能有效——基于 INI1 缺失的合成致死原理（已批准用于上皮样肉瘤） |
-| **RT 角色** | 同 SMARCA4 缺失型——PORT 必做，根治性 70 Gy |
+| **别名** | INI1 缺失型鼻腔鼻窦癌 / SMARCB1-deficient sinonasal carcinoma |
+| **病理** | 基底样或横纹肌样（rhabdoid）形态。INI1 IHC 核表达完全缺失。SMARCA4(BRG1) 保留。CK 常阳性，p63 阴性 |
+| **分子机制** | INI1 缺失→SWI/SNF 复合体功能丧失→EZH2 不受抑制→PRC2 持续激活→H3K27me3 异常沉积→肿瘤发生。**这是"合成致死"靶点——INI1 缺失的肿瘤依赖 EZH2 存活** |
+| **临床** | 中青年多见（中位 ~50 岁），比 SMARCA4 缺失型更年轻。高度侵袭性——>70% 初诊 T4。易侵犯颅底/眼眶 |
+| **预后** | 极差——中位 OS <2 年。但比 SMARCA4 缺失型略好 |
+| **淋巴结** | 转移率高于 SMARCA4 缺失型——建议 ENI（同侧 ⅠB+Ⅱ+Ⅲ） |
+
+#### INI1 缺失型的治疗策略
+
+| 治疗 | 推荐 | 理由 |
+|------|:--:|------|
+| **手术** | ✅ 争取最大安全切除 | 很难 R0——颅底/眼眶紧邻。R1/R2 常见→PORT 必做 |
+| **PORT** | 🔥 必做，60-66 Gy | 高局部复发风险。R1→66 Gy。R2→70 Gy |
+| **根治性 RT** | 不可手术时→70 Gy | RT 是唯一可靠的局部治疗 |
+| **颈部 ENI** | ✅ 同侧 ⅠB+Ⅱ+Ⅲ | LN 转移率高于 SMARCA4 缺失型 |
+| **同步化疗（顺铂）** | ⚠️ 证据不足 | 传统化疗效果差——INI1 缺失型属"化疗不敏感" |
+| **EZH2 抑制剂（Tazemetostat）** | 🔥 **最值得关注的靶向治疗** | FDA 已批准用于上皮样肉瘤（也是 INI1 缺失）。鼻腔鼻窦病例报告显示 PR/SD。800 mg BID 口服，耐受性好。推荐用于复发/转移/不可切除，或临床研究 |
+| **免疫治疗** | ⚠️ 有限数据 | PD-L1 表达不定——不常规推荐。可检测 MSI/TMB 后决定 |
+
+> **EZH2 抑制剂原理**：INI1 缺失→EZH2 不受抑制→肿瘤细胞依赖 EZH2 存活。Tazemetostat 抑制 EZH2→肿瘤细胞选择性死亡（正常细胞有 INI1，不受影响）。这是精准的"合成致死"——比化疗聪明。
+
+#### 关键鉴别
+
+| IHC | INI1 缺失型 | SMARCA4 缺失型 | NUT 癌 | SNUC |
+|-----|:--:|:--:|:--:|:--:|
+| INI1 | **丢失** | 保留 | 保留 | 保留 |
+| BRG1 | 保留 | **丢失** | 保留 | 保留 |
+| NUT | 阴性 | 阴性 | **阳性** | 阴性 |
+| CK | 常阳性 | 常阳性 | 阳性（鳞状） | 阳性 |
+| p63 | 阴性 | 阴性 | 阳性 | 阴性/弱 |
+| INSM1 | 阴性 | 阴性 | 阴性 | 常阳性 |
 
 #### 分子检测建议
 
